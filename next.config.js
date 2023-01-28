@@ -8,7 +8,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "www.superherodb.com",
+        protocol:"https",
+        hostname: "rickandmortyapi.com",
       },
     ],
   },
