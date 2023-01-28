@@ -1,5 +1,5 @@
-import { Card } from "../../components";
 import { getCharacters } from "./services";
+import Card from '../../../components/Card/Card';
 
 async function fetchCharacters() {
   return await getCharacters();

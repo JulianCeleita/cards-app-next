@@ -1,5 +1,6 @@
-import { Card } from "../../components";
+
 import { getLocations } from "./services";
+import Card from '../../../components/Card/Card';
 
 async function fetchLocations() {
   return await getLocations();

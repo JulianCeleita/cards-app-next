@@ -1,7 +1,7 @@
-import "./character-container.css"
+import "./information-layout.css"
 function CardLayout({children}: {children:React.ReactNode}) {
   return (
-    <div className="character-layout">{children}</div>
+    <div className="information-layout">{children}</div>
   )
 }
 export default CardLayout
