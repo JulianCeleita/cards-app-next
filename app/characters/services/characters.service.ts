@@ -1,11 +1,11 @@
 import { Character } from "../models";
 
 export const getCharacters = (): Promise<Character[]> => {
-  const urlHeroe = `https://superheroapi.com/api/1646193842463635/1`;
+  const url = `https://rickandmortyapi.com/api/character`;
   //const urlWithId = `${url}/${id}`;     
   
-  return fetch(urlHeroe)
+  return fetch(url)
     .then((response) => response.json())
-    .then((data) => data);
+    .then((data) => data.results);
 };
 
