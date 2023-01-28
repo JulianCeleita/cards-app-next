@@ -1,17 +1,18 @@
-import { Character } from '../../app/characters/models/character.model';
+import { Character } from "../../app/characters/models/character.model";
+import "./Card.css";
 
 interface Props {
-    data: Character;
+  data: Character;
 }
 
 function Card({ data }: Props) {
   return (
-    <div>
-        <p>Name:{data.name}</p>
-        <p>Type: {data.type}</p>
-        <p>Created: {data.created}</p>
+    <div className="Card">
+      <p>Name:{data.name}</p>
+      <p>Type: {data.type}</p>
+      <p>Created: {data.created}</p>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
