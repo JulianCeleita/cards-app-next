@@ -1,6 +1,4 @@
-import { Location } from "app/locations/models";
 import Image from "next/image";
-import { Character } from "../../app/characters/models/character.model";
 import "./Card.css";
 
 interface CardData {
