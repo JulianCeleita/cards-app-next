@@ -1,8 +1,18 @@
+import { Card } from "../../components";
+import { getLocations } from "./services";
 
-function Locations() {
-  return (
-    <div>Locations</div>
-  )
+async function fetchLocations() {
+  return await getLocations();
 }
 
-export default Locations
+async function Locations() {
+  const locations = await fetchLocations();
+  return (
+    <>
+      {locations.map((location)=>(
+        <Card key={location.id} data={location}/>
+      ))}
+    </>
+  );
+}
+export default Locations;

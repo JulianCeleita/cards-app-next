@@ -9,8 +9,8 @@ async function Characters() {
   const characters = await fetchCharacters();
   return (
     <>
-      {characters.map((characters)=>(
-        <Card key={characters.id} data={characters}/>
+      {characters.map((character)=>(
+        <Card key={character.id} data={character}/>
       ))}
     </>
   );
